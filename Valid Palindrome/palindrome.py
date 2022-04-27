@@ -26,7 +26,7 @@ def isPalindrome(s):
     # Convert the whole string to lower case 
     check = tmp.lower()
     #true if the the string equals its reverse else false
-    return True if (check[::-1] == check) else False
+    return check[::-1] == check
 
 print(isPalindrome("racecar")) #Should return true
 print(isPalindrome("hello")) #Should return False
