@@ -24,10 +24,8 @@ def isPalindrome(s):
     tmp = ''.join(c for c in s if c.isalnum())
     # Convert the whole string to lower case 
     check = tmp.lower()
-    # Create a reverse of the list
-    reverse = check[::-1]
     #true if the the string equals its reverse else false
-    if(reverse == check):
+    if(check[::-1] == check):
         print("True")
         return True
     print("False")
