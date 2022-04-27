@@ -14,7 +14,7 @@
 from collections import Counter
 
 def isAnagram(s, t):
-    return True if(Counter(s) == Counter(t)) else False
+    return Counter(s) == Counter(t)
 
 print(isAnagram("hello", "world")) #False Test
 print(isAnagram("rat", "tar")) #True Test
