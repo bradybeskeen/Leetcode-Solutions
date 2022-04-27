@@ -21,10 +21,8 @@
 # Since an empty string reads the same forward and backward, it is a palindrome.
 
 def isPalindrome(s): 
-    # Concatenate string removing all spaces and non alpha-numeric characters
-    tmp = ''.join(c for c in s if c.isalnum())
-    # Convert the whole string to lower case 
-    check = tmp.lower()
+    # Concatenate string removing all spaces and non alpha-numeric characters and converting to lowercase
+    check = (''.join(c for c in s if c.isalnum())).lower()
     #true if the the string equals its reverse else false
     return check[::-1] == check
 
