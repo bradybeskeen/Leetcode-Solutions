@@ -3,8 +3,6 @@
 # Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 # An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
- 
-
 # Example 1:
 # Input: s = "anagram", t = "nagaram"
 # Output: true
@@ -15,15 +13,8 @@
 
 from collections import Counter
 
-
 def isAnagram(s, t):
-    sdic = Counter(s)
-    tdic = Counter(t)
-    if(sdic == tdic):
-        print("True")
-        return True
-    print("False")
-    return False
+    return True if(Counter(s) == Counter(t)) else False
 
-isAnagram("hello", "world")
-isAnagram("rat", "tar")
+print(isAnagram("hello", "world")) #False Test
+print(isAnagram("rat", "tar")) #True Test
