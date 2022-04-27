@@ -12,17 +12,18 @@
 # Example 2:
 # Input: s = "rat", t = "car"
 # Output: false
- 
-# Constraints:
-# 1 <= s.length, t.length <= 5 * 104
-# s and t consist of lowercase English letters.
 
 from collections import Counter
 
 
-def isAnagram(self, s: str, t: str) -> bool:
+def isAnagram(s, t):
     sdic = Counter(s)
     tdic = Counter(t)
     if(sdic == tdic):
+        print("True")
         return True
+    print("False")
     return False
+
+isAnagram("hello", "world")
+isAnagram("rat", "tar")
